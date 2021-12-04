@@ -1,3 +1,37 @@
-.main {
-    margin: 0 auto;
+.body {
+    margin: 0;
 }
+
+#container-imagem {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url("../images/background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.main-title {
+    padding: 15px;
+    display: inline;
+}
+
+.main-cod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid white;
+}
+
+
+.hide{
+    display: none;
+}
+
+#numKey{
+    width: 25%;
+    height: 15px;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+   
