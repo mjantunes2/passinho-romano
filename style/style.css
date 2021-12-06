@@ -8,12 +8,18 @@
   font-family: "Roboto", sans-serif;
 }
 
-.main-cod {
+.main {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 15px;
+  align-items: center;
+}
+
+.main-cod {
+  width: 20%;
+  height: 300px;
 }
 
 .main-title {
@@ -22,7 +28,8 @@
   padding: 15px;
   background-color: #8fa9bf94;
   box-shadow: 0 0 10px black;
-  border-radius: 2px;
+  border-radius: 5px;
+
 }
 
 .form {
@@ -32,12 +39,12 @@
   padding: 10px;
   background-color: #8fa9bf94;
   box-shadow: 0 0 10px black;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .inserted-message {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-message {
@@ -76,6 +83,6 @@ textarea {
 }
 
 .form-field {
-    padding: 2px;
-    vertical-align: middle;
+  padding: 2px;
+  vertical-align: middle;
 }
