@@ -25,10 +25,9 @@ decod.addEventListener("click", function(){
 )
 
 function escolha() {
-  var tipoCodigo = document.getElementById("select").value;
+  var tipoCodigo = document.getElementById("selector").value;
   var mensagem = document.querySelector("#mensagem").value;
   var opcao = document.getElementsByName("codDecod");
-
   for (var i = 0; i < opcao.length; i++) {
     if (opcao[i].checked == true) {
       opcao = opcao[i].id;
@@ -81,7 +80,7 @@ function cifraCod(recebe, opcao) {
     "y",
     "z",
   ];
-  var deslocamento = document.getElementById("numerocesar").value;
+  var deslocamento = document.getElementById("numKey").value;
   deslocamento = parseInt(deslocamento);
   var mensagemFinal = [];
 
@@ -98,10 +97,13 @@ function cifraCod(recebe, opcao) {
             break;
           } else {
             var aux = j + deslocamento;
-            if (aux > 24) {
+            if (aux > 25) {
+              console.log(aux);
               aux = j + deslocamento - 26;
+              console.log(aux);
             }
             mensagemFinal[i] = letras[aux];
+            
             break;
           }
         }

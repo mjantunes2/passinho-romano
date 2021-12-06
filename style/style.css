@@ -1,37 +1,81 @@
 .body {
-    margin: 0;
-}
-
-#container-imagem {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background: url("../images/background.jpg") center no-repeat;
-    background-size: cover;
-}
-
-.main-title {
-    padding: 15px;
-    display: inline;
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: url("../images/background.jpg") center no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-cod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #8fa9bf94;
+  box-shadow: 0 0 10px black;
+  border-radius: 2px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: #8fa9bf94;
+  box-shadow: 0 0 10px black;
+  border-radius: 3px;
+}
+
+.inserted-message {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    border: 2px solid white;
 }
 
-
-.hide{
-    display: none;
+.text-message {
+  font-size: 15px;
+  font-weight: bolder;
 }
 
-#numKey{
-    width: 25%;
-    height: 15px;
-    padding-left: 10px;
-    padding-right: 10px;   
+.text-select {
+  font-size: 15px;
 }
-   
+
+.hide {
+  display: none;
+  font-weight: bold;
+}
+
+#numKey {
+  width: 50%;
+  height: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text-cod {
+  font-weight: bold;
+}
+
+#submit {
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+
+.form-field {
+    padding: 2px;
+    vertical-align: middle;
+}

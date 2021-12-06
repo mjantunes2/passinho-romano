@@ -1,81 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/style.css" />
-    <title>Codificador e Decodificador</title>
-  </head>
-  <body class="body">
-    <div id="container-imagem">
-    <main class="main">
-      <div class="main-cod">
-        <div class="title-container">
-          <h1 class="main-title">Passinho do Romano</h1>
-        </div>
-        <form>
-          <label for="mensagem">Escreva sua mensagem:</label>
-          <input
-            type="text"
-            name="mensagem"
-            id="mensagem"
-            placeholder="Mensagem"
-          /><br />
 
-          <label>Selecione o tipo de Código:</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Codificador e Decodificador</title>
+</head>
 
-          <select name="select" id="selector">
-            <option id="base" value="base64">Base64</option>
-            <option id="cifra" value="cifracesar">Cifra de César</option>
-          </select>
-          <input
-            type="number"
-            id="numKey"
-            class="hide"
-            name="chave"
-            min="1"
-            max="25"
-            placeholder="Insira aqui o numero desejado"
-          />
-          <br />
-          <input
-            type="radio"
-            id="codificar"
-            name="codDecod"
-            value="codificar"
-            checked
-          />
-          <label for="codificar">Codificar</label>
+<body class="body">
 
-          <input
-            type="radio"
-            id="decodificar"
-            name="codDecod"
-            value="decodificar"
-          />
-          <label for="decodificar">Decodificar</label>
-
-          <input
-            type="submit"
-            value="Codificar Mensagem"
-            id="submit"
-            onclick="escolha()"
-          />
-
-          <label for="texto">Mensagem</label>
-          <textarea
-            cols="50"
-            rows="5"
-            id="texto"
-            class="codigoCodificado"
-            required
-          ></textarea>
-        </form>
+  <main class="main">
+    <div class="main-cod">
+      <div class="title-container">
+        <h1 class="main-title">Passinho do Romano</h1>
       </div>
-    </main>
-</div>
-    <script src="javascript/decodificar.js"></script>
-  </body>
+      <form class="form">
+        <div class="inserted-message">
+        <label class="text-message" for="mensagem">Escreva sua mensagem:</label>
+        <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem" /><br />
+        </div>
+
+        <label class="text-message">Selecione o tipo de Código:</label>
+
+        <select class ="text-select" name="select" id="selector">
+          <option id="base" value="base64">Base64</option>
+          <option id="cifra" value="cifracesar">Cifra de César</option>
+        </select>
+        <input  type="number" id="numKey" class="hide" name="chave" min="1" max="25"
+          placeholder="Insira aqui o número desejado" />
+        <br />
+        <div class="form-field">
+        <input type="radio" id="codificar" name="codDecod" value="codificar" checked />
+        <label class="text-cod" for="codificar">Codificar</label>
+        </div>
+
+        <div class="form-field">
+        <input type="radio" id="decodificar" name="codDecod" value="decodificar" />
+        <label class="text-cod" for="decodificar">Decodificar</label><br>
+        </div>
+
+        <input type="submit" value="Codificar Mensagem" id="submit" onclick="escolha()" /><br>
+
+        <label class="text-message" for="texto"></label><br>
+        <textarea cols="50" rows="5" id="texto" class="codigoCodificado" required></textarea>
+      </form>
+    </div>
+  </main>
+
+  <script src="javascript/decodificar.js"></script>
+</body>
+
 </html>
